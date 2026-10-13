@@ -1,0 +1,100 @@
+<mxfile host="65bd71144e">
+    <diagram id="dfit-flow" name="D&#39;FIT Project Flow">
+        <mxGraphModel dx="896" dy="614" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="1000" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="title" parent="1" style="text;html=1;strokeColor=none;fillColor=none;fontColor=#415232;fontSize=24;fontStyle=1;align=left;verticalAlign=middle;" value="D&#39;FIT ORGANIC | Full-Stack E-commerce Flow" vertex="1">
+                    <mxGeometry height="40" width="700" x="40" y="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="customer" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFE8CC;strokeColor=#B2693D;fontColor=#415232;fontStyle=1;fontSize=16;" value="CUSTOMER JOURNEY" vertex="1">
+                    <mxGeometry height="40" width="300" x="40" y="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="browse" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Browse home / shop&lt;br&gt;Search, filter, sort products" vertex="1">
+                    <mxGeometry height="70" width="220" x="40" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="detail" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Product details&lt;br&gt;Gallery, price, stock, quantity" vertex="1">
+                    <mxGeometry height="70" width="220" x="300" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="auth" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Login / register&lt;br&gt;JWT access + refresh tokens" vertex="1">
+                    <mxGeometry height="70" width="220" x="560" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="cart" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Cart&lt;br&gt;Add, update, remove items&lt;br&gt;Server validates stock" vertex="1">
+                    <mxGeometry height="70" width="220" x="820" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="checkout" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Checkout&lt;br&gt;Shipping details + order summary" vertex="1">
+                    <mxGeometry height="70" width="220" x="1080" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="orders" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Order created&lt;br&gt;Price snapshots + stock decrement&lt;br&gt;Order history / account" vertex="1">
+                    <mxGeometry height="70" width="220" x="1340" y="180" as="geometry"/>
+                </mxCell>
+                <mxCell id="admin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#EFE8CC;strokeColor=#B2693D;fontColor=#415232;fontStyle=1;fontSize=16;" value="ADMIN JOURNEY" vertex="1">
+                    <mxGeometry height="40" width="300" x="40" y="350" as="geometry"/>
+                </mxCell>
+                <mxCell id="adminlogin" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Django admin login&lt;br&gt;Staff / superuser required" vertex="1">
+                    <mxGeometry height="70" width="220" x="40" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="productmanage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Product manager&lt;br&gt;Create, edit, archive products&lt;br&gt;Upload product images" vertex="1">
+                    <mxGeometry height="70" width="220" x="300" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="catalogmanage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Catalog data&lt;br&gt;Categories, pricing, stock, featured status" vertex="1">
+                    <mxGeometry height="70" width="220" x="560" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="ordermanage" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFDF7;strokeColor=#415232;fontColor=#273023;" value="Order management&lt;br&gt;Review orders and statuses&lt;br&gt;Historical items preserved" vertex="1">
+                    <mxGeometry height="70" width="220" x="820" y="430" as="geometry"/>
+                </mxCell>
+                <mxCell id="frontend" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#415232;strokeColor=#26341F;fontColor=#EFE8CC;fontStyle=1;fontSize=15;" value="FRONTEND | React + Vite&lt;br&gt;Pages, routes, components, CartContext&lt;br&gt;http://127.0.0.1:5173" vertex="1">
+                    <mxGeometry height="90" width="360" x="40" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="api" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#415232;strokeColor=#26341F;fontColor=#EFE8CC;fontStyle=1;fontSize=15;" value="BACKEND | Django REST Framework&lt;br&gt;/api/products, /api/cart, /api/order, /api/admin&lt;br&gt;JWT authentication + permissions&lt;br&gt;http://127.0.0.1:8000" vertex="1">
+                    <mxGeometry height="90" width="420" x="460" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="db" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2693D;strokeColor=#8D4D2C;fontColor=#FFFDF7;fontStyle=1;fontSize=15;" value="DATABASE | SQLite local / PostgreSQL configured&lt;br&gt;User, Category, Product, Cart, Order, OrderItem, Address&lt;br&gt;OrderItem stores product name and price snapshots" vertex="1">
+                    <mxGeometry height="120" width="320" x="940" y="590" as="geometry"/>
+                </mxCell>
+                <mxCell id="media" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#B2693D;strokeColor=#8D4D2C;fontColor=#FFFDF7;fontStyle=1;fontSize=15;" value="MEDIA STORAGE&lt;br&gt;Product images in backend/media/products&lt;br&gt;Object storage recommended for production" vertex="1">
+                    <mxGeometry height="90" width="230" x="1330" y="620" as="geometry"/>
+                </mxCell>
+                <mxCell id="e1" edge="1" parent="1" source="browse" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#415232;" target="detail">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e2" edge="1" parent="1" source="detail" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#415232;" target="auth">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e3" edge="1" parent="1" source="auth" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#415232;" target="cart">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e4" edge="1" parent="1" source="cart" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#415232;" target="checkout">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e5" edge="1" parent="1" source="checkout" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#415232;" target="orders">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e6" edge="1" parent="1" source="adminlogin" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#B2693D;" target="productmanage">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e7" edge="1" parent="1" source="productmanage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#B2693D;" target="catalogmanage">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e8" edge="1" parent="1" source="catalogmanage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#B2693D;" target="ordermanage">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e9" edge="1" parent="1" source="frontend" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#EFE8CC;fontColor=#415232;" target="api" value="JSON API">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e10" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#EFE8CC;fontColor=#415232;" target="db" value="ORM">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e11" edge="1" parent="1" source="api" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#EFE8CC;fontColor=#415232;" target="media" value="image URLs">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e12" edge="1" parent="1" source="orders" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#B2693D;dashed=1;" target="db">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="e13" edge="1" parent="1" source="productmanage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;endArrow=block;strokeColor=#B2693D;dashed=1;" target="media">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>

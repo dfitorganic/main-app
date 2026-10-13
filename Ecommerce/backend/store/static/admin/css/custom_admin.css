@@ -1,0 +1,234 @@
+:root {
+  --bg: #f7f8fb;
+  --panel: #ffffff;
+  --ink: #0f172a;
+  --muted: #64748b;
+  --line: #e2e8f0;
+  --brand-1: #ea580c;
+  --brand-2: #f97316;
+  --brand-3: #fed7aa;
+  --good: #059669;
+  --danger: #dc2626;
+  --shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: "Manrope", "Segoe UI", sans-serif;
+  background: radial-gradient(circle at top right, #ffe8d4, transparent 35%), var(--bg);
+  color: var(--ink);
+}
+
+#header {
+  background: linear-gradient(95deg, var(--brand-1), var(--brand-2)) !important;
+  box-shadow: var(--shadow);
+  border: 0;
+}
+
+.brand-wrap { display: flex; align-items: center; }
+.brand-link { display: inline-flex; align-items: center; gap: 10px; color: #fff !important; text-decoration: none; }
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--brand-1);
+  font-weight: 800;
+  font-size: 13px;
+}
+.brand-text { font-weight: 800; font-size: 20px; letter-spacing: 0.2px; }
+
+#user-tools a {
+  color: #fff !important;
+  background: rgba(255, 255, 255, 0.18);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+#content { max-width: none !important; padding: 24px 30px !important; }
+#content-main { animation: fade-in .24s ease; }
+
+.module, #changelist-filter, #toolbar, .breadcrumbs, #content-related {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: var(--panel);
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.04);
+}
+
+.module caption,
+.module h2,
+.inline-group h2,
+#changelist-filter h2,
+#nav-sidebar .module caption {
+  background: linear-gradient(95deg, var(--brand-1), var(--brand-2)) !important;
+  color: #fff !important;
+  border-radius: 12px 12px 0 0;
+  font-weight: 700;
+  letter-spacing: .2px;
+}
+
+#result_list th { background: #f8fafc !important; border-bottom: 1px solid var(--line); }
+#result_list td { border-bottom: 1px solid #eef2f7; }
+#result_list tr:hover td { background: #fff7ed; }
+#result_list td a,
+#result_list td a:visited {
+  color: #0284c7 !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+#result_list td a:hover {
+  color: #0369a1 !important;
+  text-decoration: underline;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="url"],
+input[type="tel"],
+textarea,
+select {
+  border: 1px solid #cbd5e1 !important;
+  border-radius: 10px !important;
+  padding: 10px 12px !important;
+  background: #fff;
+}
+
+input:focus, textarea:focus, select:focus {
+  border-color: var(--brand-2) !important;
+  box-shadow: 0 0 0 4px rgba(249, 115, 22, .16);
+  outline: 0;
+}
+
+.button,
+input[type="submit"],
+.submit-row input,
+a.button {
+  background: linear-gradient(95deg, var(--brand-1), var(--brand-2)) !important;
+  border: 0 !important;
+  color: #fff !important;
+  border-radius: 10px !important;
+  font-weight: 700;
+}
+
+.button:hover,
+input[type="submit"]:hover,
+.submit-row input:hover,
+a.button:hover {
+  filter: brightness(1.05);
+  transform: translateY(-1px);
+}
+
+.deletelink, .deletelink-box a {
+  background: var(--danger) !important;
+  border-radius: 10px !important;
+  color: #fff !important;
+}
+
+.addlink {
+  background: var(--good) !important;
+  color: #fff !important;
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+/* Keep changelist action controls readable and aligned */
+#changelist .actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+#changelist .actions select {
+  min-width: 220px;
+  max-width: 320px;
+}
+#changelist .actions .button,
+#changelist .actions button {
+  background: linear-gradient(95deg, var(--brand-1), var(--brand-2)) !important;
+  color: #fff !important;
+  border: 0 !important;
+  border-radius: 8px !important;
+  padding: 8px 14px !important;
+  font-weight: 700;
+}
+
+/* Ensure Add / Change / Delete links are clearly visible */
+.changelink,
+.deletelink,
+a.addlink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.adcart-dashboard { width: 100%; }
+.adcart-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 14px;
+  background: linear-gradient(125deg, #1e293b, #334155 60%, #475569);
+  color: #fff;
+  border-radius: 16px;
+  padding: 26px;
+  margin-bottom: 20px;
+}
+.adcart-hero h1 { margin: 0; font-size: 30px; font-weight: 800; }
+.adcart-hero p { margin: 6px 0 0; color: #cbd5e1; }
+.hero-actions { display: flex; gap: 10px; }
+.hero-btn {
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 14px;
+}
+.hero-btn.primary { background: #fff; color: #0f172a; }
+.hero-btn.ghost { border: 1px solid #cbd5e1; color: #fff; }
+
+.adcart-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-bottom: 22px;
+}
+.stat-card {
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  background: #fff;
+  padding: 16px;
+}
+.stat-card h3 { margin: 0 0 6px; color: var(--muted); font-size: 12px; letter-spacing: .5px; text-transform: uppercase; }
+.stat-card p { margin: 0; font-size: 30px; font-weight: 800; color: #0f172a; }
+.stat-card.revenue p { color: #ea580c; }
+.stat-card.products p { color: #2563eb; }
+.stat-card.orders p { color: #059669; }
+.stat-card.customers p { color: #7c3aed; }
+.stat-card.categories p { color: #db2777; }
+
+.admin-login-shell {
+  min-height: calc(100vh - 160px);
+  display: grid;
+  place-items: center;
+  padding: 30px 16px;
+}
+.admin-login-card {
+  width: 100%;
+  max-width: 430px;
+  background: #fff;
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  padding: 26px;
+  box-shadow: var(--shadow);
+}
+.login-head { text-align: center; margin-bottom: 14px; }
+.login-head h1 { margin: 10px 0 4px; font-size: 28px; font-weight: 800; }
+.login-head p { margin: 0; color: var(--muted); }
+
+@keyframes fade-in { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }

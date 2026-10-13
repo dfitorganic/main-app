@@ -1,0 +1,38 @@
+Use 3 PowerShell terminals.
+
+Terminal 1: Backend
+
+
+cd "C:\Users\keesh\OneDrive\Desktop\dfit\Ecommerce-Full-Stack-using-Django-React-main\Ecommerce-Full-Stack-using-Django-React-main\backend"
+
+python -m pip install -r requirements.txt
+python -m pip install django==5.2.8
+
+$env:DEBUG="True"
+python manage.py migrate
+python manage.py runserver 127.0.0.1:8000
+
+=========================================
+Terminal 2: Storefront
+
+cd "C:\Users\keesh\OneDrive\Desktop\dfit\Ecommerce-Full-Stack-using-Django-React-main\Ecommerce-Full-Stack-using-Django-React-main\frontend"
+
+npm install
+npm run dev
+
+===============================================
+
+Terminal 3: Admin frontend
+
+cd "C:\Users\keesh\OneDrive\Desktop\dfit\Ecommerce-Full-Stack-using-Django-React-main\Ecommerce-Full-Stack-using-Django-React-main\admin-frontend"
+
+npm install
+npm run dev
+
+===========================================
+Open:
+
+Storefront: http://localhost:5173/
+Admin frontend: http://127.0.0.1:5174/
+API: http://127.0.0.1:8000/api/
+Django admin: http://127.0.0.1:8000/admin/

@@ -1,0 +1,43 @@
+1. Product management
+
+Add new products
+Edit product names, descriptions, prices, categories, and images
+Preview product images
+Search and filter products
+Archive or permanently delete products
+Display product count and catalog information
+2. Category management
+
+Create and edit categories
+Automatically generate category slugs
+Search categories
+See how many products belong to each category
+3. Order management
+
+View customer orders
+Search and filter orders
+View order items, quantities, prices, shipping, and totals
+Update order status, such as pending, processing, shipped, delivered, or cancelled
+Update payment status, such as pending, paid, failed, or refunded
+View or generate invoice details
+4. Customer management
+
+View customer accounts and contact details
+Search users by username, email, or phone number
+5. Notifications
+
+Send messages to all customers
+Send a notification to a specific customer
+Add a notification title and message
+6. Cart management
+
+View active shopping carts
+See cart owners, sessions, item counts, and totals
+Inspect individual cart items
+7. Dashboard statistics
+
+Total revenue
+Total orders
+Total products
+Total users
+Total categories
